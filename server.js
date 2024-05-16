@@ -21,6 +21,9 @@ app.use(express.static('static'));
 
 
 // Define your routes here
+app.get('/', (req, res) => {
+    res.render('index', { title: 'Home - DeskBotany.ie' });
+});
 
 
 
